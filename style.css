@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root{ /*variaveis de cor*/
   --text--ligth: white;
   --text--dark: black;
@@ -13,10 +15,14 @@ nav{
   display: flex;/*deixando tudo em linha*/
   justify-content: space-around;/*criando espaço igual entre eles*/
   align-items: center; /*alinhando tudo no centro*/
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin-top: 20px;
 }
 
 nav img{
-  height: 100px;
+  height: 150px;
 }
 /*--------------------- CARROSSEL --------------------------*/
 .container-carrossel{
@@ -45,7 +51,7 @@ nav img{
   opacity: 1;
 }
 
-#voltar, #avançar{
+#voltar, #avancar{
   width: 30px;
   height: 30px;
   border: none;
@@ -53,13 +59,13 @@ nav img{
   cursor: pointer;
 }
 
-#voltar img, #avançar img{
+#voltar img, #avancar img{
   width: 100%;
   height: 100%;
 
 }
 
-#anvançar {
+#voltar {
   transform: rotate(180deg);
 }
 
@@ -82,6 +88,7 @@ nav img{
   height: 350px; /*definindo altura*/
   border-radius: 10px; /*colocando as pontas arredondadas*/
   text-align: center; /*trazendo todo o texto pro centro*/
+  box-shadow: rgba(240, 46, 175, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 227, 46, 0.2) 0px 15px, rgba(46, 179, 240, 0.1) 0px 20px, rgba(46, 240, 88, 0.05) 0px 25px;
 }
 
 .texto h1{
@@ -97,11 +104,44 @@ nav img{
 
 footer{
   background-color: rgb(31, 30, 30);
+  color: var(--text--ligth);
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  height: 150px;
 }
 
-.instagram img{
+/*---------------------------- Redes Sociais ----------------------*/
+
+.redesSociais{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagramLogo img{
   height: 50px;
 }
-.youtube img{
+.youtubeLogo img{
   height: 70px;
+}
+.instagramLink{
+  margin-left: 5px;
+}
+.youtubeLink{
+  margin-left: 5px;
+}
+/*---------------------------- Menssagem ----------------------*/
+
+.contato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-radius: 10px;
 }

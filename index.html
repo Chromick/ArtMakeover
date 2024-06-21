@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>ArtMakover</title>
-  
+
   <!-- Amanda Nick -->
   <!-- Bruno Barral -->
-  
+
   <!-- CSS -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="responsivo.css">
@@ -20,36 +21,36 @@
   <!------------------- Header -------------------->
   <header class="header">
     <nav>
-      
-    <a href="" class="menu">Home</a>
-    <img src="logo.jpeg" alt="">
-    <a href="" class="menu">Loja</a>
-    
+
+      <a href="" class="menu">Home</a>
+      <img src="logo.jpeg" alt="">
+      <a href="" class="menu">Loja</a>
+
     </nav>
   </header>
   <!------------------- Main -------------------->
   <section class="conteudo">
-    
-  <!------------------- Carrossel -------------------->
+
+    <!------------------- Carrossel -------------------->
     <div class="container-carrossel">
-      
+
       <button id="voltar"><img src="seta_botao.png" alt=""></button>
-      
+
       <div class="container">
         <img src="goku.png" alt="" class="carrossel on" />
         <img src="tempestade.jpeg" alt="" class="carrossel" />
         <img src="busto_wolverine.jpeg" alt="" class="carrossel" />
-        
+
       </div>
-      
-      <button id="voltar"><img src="seta_botao.png" alt=""></button>
-      
+
+      <button id="avancar"><img src="seta_botao.png" alt=""></button>
+
     </div>
-    
-    
-  <!------------------- Subsection -------------------->
+
+
+    <!------------------- Subsection -------------------->
     <section id="informacoes">
-      
+
       <div class="texto">
         <h1>Quem ele é?</h1>
         <p>ele é marida da Amanda</p>
@@ -62,44 +63,64 @@
         <h1>Porque ele faz?</h1>
         <p>Porque sim</p>
       </div>
-      
+
     </section>
-    
+
   </section>
-  
+
   <!------------------- Footer -------------------->
   <footer class="">
-  <!------------------- Redes Sociais -------------------->
+    <!------------------- Redes Sociais -------------------->
     <div class="redesSociais">
-        
-      </div>
-      <div class="instagram">
-        
+
+
+      <div class="instagramLogo">
+
         <img src="Instagram_icon.png.webp" alt="" class="logo" />
-        <a href="">@cp.arte_makeover</a>
-        
       </div>
-      <div class="youtube">
-        
+      <div class="instagramLink">
+        <a href="https://www.instagram.com/cp.arte_makeover/">@cp.arte_makeover</a>
+      </div>
+      <div class="youtubeLogo">
+
         <img src="youtube_icon.png" alt="" class="logo" />
-        <a href="">@cp.arte_makeover</a>
-        
+
+      </div>
+      <div class="youtubeLink">
+
+        <a href="https://www.youtube.com/@cp.arte_makeover">@cp.arte_makeover</a>
       </div>
     </div>
-  <!------------------- Contato -------------------->
+    </div>
+    <!------------------- Contato -------------------->
     <div class="contato">
-      
+
       <div class="formulario">
-        
+
+        <h3>Fale conosco:</h3>
+
         <div class="email">
-          
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
         </div>
-        
+
+        <div class="telefone">
+          <label for="telefone">Telefone</label>
+          <input type="number" name="telefone" id="telefone">
+        </div>
+
+        <div class="menssagem">
+          <label for="menssagem">Menssagem</label>
+          <input type="text" name="menssagem" id="menssagem">
+        </div>
+
       </div>
-      
+
     </div>
   </footer>
-  <!-- Project -->
+
+  <!-------------------------------- JS ----------------------------------->
   <script src="script.js"></script>
 </body>
+
 </html>
