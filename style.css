@@ -1,0 +1,107 @@
+
+:root{ /*variaveis de cor*/
+  --text--ligth: white;
+  --text--dark: black;
+}
+
+body {
+    background: black; /*definindo cor ao fundo da página*/
+}
+
+/*---------------------------- HEADER -----------------------------*/
+nav{
+  display: flex;/*deixando tudo em linha*/
+  justify-content: space-around;/*criando espaço igual entre eles*/
+  align-items: center; /*alinhando tudo no centro*/
+}
+
+nav img{
+  height: 100px;
+}
+/*--------------------- CARROSSEL --------------------------*/
+.container-carrossel{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center; 
+}
+
+.container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.carrossel{
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on{
+  opacity: 1;
+}
+
+#voltar, #avançar{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#voltar img, #avançar img{
+  width: 100%;
+  height: 100%;
+
+}
+
+#anvançar {
+  transform: rotate(180deg);
+}
+
+/*----------------------- SUBSECTION ----------------------*/
+
+.menu{
+  color: var(--text--ligth); /*definindo cor ao texto*/
+}
+
+#informacoes{
+  display: flex; /*colocando tudo em linha*/
+  justify-content: center; /*tazendo todo conteudo pro centro*/
+}
+
+.texto{
+  background-color: var(--text--ligth); /* definindo cor do fundo */ 
+  color: var(--text--dark); /* definido a cor da letra */
+  margin: 50px; /*definido margem em volta */
+  width: 300px; /*definindo largura */
+  height: 350px; /*definindo altura*/
+  border-radius: 10px; /*colocando as pontas arredondadas*/
+  text-align: center; /*trazendo todo o texto pro centro*/
+}
+
+.texto h1{
+  padding: 5px; /*afastamento das bordas*/
+  font-size: 18px; /*tamanho da fonte*/
+}
+
+.texto p{
+  padding: 5px; /*afastamento das bordas*/
+  font-size: 14px; /*tamanho da fonte*/
+}
+/*---------------------------- FOOTER----------------------*/
+
+footer{
+  background-color: rgb(31, 30, 30);
+}
+
+.instagram img{
+  height: 50px;
+}
+.youtube img{
+  height: 70px;
+}
