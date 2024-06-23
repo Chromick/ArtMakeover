@@ -11,69 +11,123 @@ body {
 }
 
 /*---------------------------- HEADER -----------------------------*/
-nav{
-  display: flex;/*deixando tudo em linha*/
-  justify-content: space-around;/*criando espaço igual entre eles*/
-  align-items: center; /*alinhando tudo no centro*/
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  margin-top: 20px;
+header {
+  background-color:var(--text--dark);
+  box-shadow: 0px 3px 10px #464646;
+  
 }
 
-nav img{
-  height: 150px;
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width: 150px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.nav-item {
+  margin: 0 20px;
+}
+
+.nav-link {
+  font-family: "Rubik", sans-serif; /**/
+  font-size: 20px;
+  color: var(--text--ligth);
+  font-weight: 600;
+}
+
+.login-button button {
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--text--ligth);
+}
+
+.login-button button a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text--dark);
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: "Rubik", sans-serif; /**/
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 /*--------------------- CARROSSEL --------------------------*/
 .container-carrossel{
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center; 
+  display: flex; /*deixando uma do lado da outra*/
+  min-height: 100vh; /*vizualizar as imagens todas*/
+  align-items: center; /*alinhando no centro*/
+  justify-content: center; /*centralizando na div*/
 }
 
 .container{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
+  position: relative; /**/
+  display: flex; /**/
+  align-items: center; /*alinhado no centro*/
+  justify-content: center; /*centralizando na div*/
+  width: 300px; /*tamanho do quadro*/
 }
 .carrossel{
-  opacity: 0;
-  transition: opacity .2s;
-  position: absolute;
-  width: 100%;
-  border-radius: 10px;
+  opacity: 0; /**/
+  transition: opacity .2s; /**/
+  position: absolute; /**/
+  width: 100%; /**/
+  border-radius: 10px; /**/
 }
 
 .on{
-  opacity: 1;
+  opacity: 1; /**/
 }
 
 #voltar, #avancar{
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+  width: 30px; /*tamanho dos botoes*/
+  height: 30px; /*tamanho dos botoes*/
+  border: none; /*tirando as bordas*/
+  background-color: transparent; /*deixando transparente o fundo*/
+  cursor: pointer; /*ao passar o mouse na div muda o mouse*/
 }
 
 #voltar img, #avancar img{
-  width: 100%;
-  height: 100%;
+  width: 100%; /**/
+  height: 100%; /**/
 
 }
 
 #voltar {
-  transform: rotate(180deg);
+  transform: rotate(180deg); /*rotacionando a imagem*/
 }
 
 /*----------------------- SUBSECTION ----------------------*/
-
-.menu{
-  color: var(--text--ligth); /*definindo cor ao texto*/
-}
 
 #informacoes{
   display: flex; /*colocando tudo em linha*/
@@ -83,7 +137,7 @@ nav img{
 .texto{
   background-color: var(--text--ligth); /* definindo cor do fundo */ 
   color: var(--text--dark); /* definido a cor da letra */
-  margin: 50px; /*definido margem em volta */
+  margin: 10px;
   width: 300px; /*definindo largura */
   height: 350px; /*definindo altura*/
   border-radius: 10px; /*colocando as pontas arredondadas*/
@@ -103,45 +157,81 @@ nav img{
 /*---------------------------- FOOTER----------------------*/
 
 footer{
-  background-color: rgb(31, 30, 30);
-  color: var(--text--ligth);
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  height: 150px;
+  background-color: rgb(31, 30, 30); /**/
+  color: var(--text--ligth); /**/
+  font-family: "Rubik", sans-serif; /**/
+  font-weight: 700; /**/
+  font-size: 20px; /**/
+  display: flex; /**/
+  justify-content: space-around; /**/
+  margin-top: 20px; /**/
+  height: 150px; /**/
 }
 
 /*---------------------------- Redes Sociais ----------------------*/
 
 .redesSociais{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /**/
+  align-items: center; /**/
 }
 
 .instagramLogo img{
-  height: 50px;
+  height: 50px; /**/
 }
 .youtubeLogo img{
-  height: 70px;
+  height: 70px; /**/
 }
 .instagramLink{
-  margin-left: 5px;
+  margin-left: 5px; /**/
 }
 .youtubeLink{
-  margin-left: 5px;
+  margin-left: 5px; /**/
+}
+
+.youtubeLink .tooltiptext{
+  text-size-adjust: auto; /**/
 }
 /*---------------------------- Menssagem ----------------------*/
 
 .contato{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /**/
+  justify-content: center; /**/
+  align-items: center; /**/
 }
 
 input {
-  border-radius: 10px;
+  border-radius: 10px; /**/
+}
+/*---------------------------- Tooltip ----------------------*/
+
+.tooltip {
+  position: relative; /**/
+  display: inline-block; /**/
+  border-bottom: 1px dotted black; /**/
+}
+
+.tooltip span{
+  font-size: 10px; /**/
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden; /**/
+  width: auto; /**/
+  padding: 1px 2px; /**/
+  background-color: var(--text--ligth); /**/
+  color:var(--text--dark); /**/
+  text-align: center; /**/
+  border-radius: 6px; /**/
+  
+  /*--------------------------POSIÇÃO DA TOOLTIP------------------- */
+  position: absolute; /**/
+  z-index: 1; /**/
+  bottom: 100%; /**/
+  left: 50%; /**/
+  margin-left: -60px; /**/
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible; /* tornando visivel o texto ao passar o mouse*/
 }

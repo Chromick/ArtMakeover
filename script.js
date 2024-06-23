@@ -1,3 +1,17 @@
+/* mostrar e tirar menu hamburguer */
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "menu-icon.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "close_white_36dp.svg";
+    }
+}
+
+
+/* efeitos carousel */
 const carrossel = document.querySelectorAll('.carrossel');
 const btnVoltar = document.getElementById('voltar');
 const btnAvancar = document.getElementById('avancar');
@@ -49,6 +63,5 @@ btnVoltar.addEventListener('click', back);
 
 // Inicia o temporizador assim que a página carregar
 startTimer();
-
 
 

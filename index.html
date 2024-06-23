@@ -10,6 +10,8 @@
 
   <!-- Amanda Nick -->
   <!-- Bruno Barral -->
+  <!-- Luana Zenha -->
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="reset.css">
@@ -19,108 +21,141 @@
 
 <body>
   <!------------------- Header -------------------->
-  <header class="header">
-    <nav>
 
-      <a href="" class="menu">Home</a>
-      <img src="logo.jpeg" alt="">
-      <a href="" class="menu">Loja</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Menu Responsivo</title>
+  </head>
 
-    </nav>
-  </header>
-  <!------------------- Main -------------------->
-  <section class="conteudo">
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="logo.jpeg" alt="">
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Loja</a></li>
 
-    <!------------------- Carrossel -------------------->
-    <div class="container-carrossel">
+          </ul>
+        </div>
+        <div class="login-button">
+          <button><a href="#">Entrar</a></button>
+        </div>
 
-      <button id="voltar"><img src="seta_botao.png" alt=""></button>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()"><img class="icon" src="menu-icon.svg" alt=""></button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Loja</a></li>
+        </ul>
 
-      <div class="container">
-        <img src="goku.png" alt="" class="carrossel on" />
-        <img src="tempestade.jpeg" alt="" class="carrossel" />
-        <img src="busto_wolverine.jpeg" alt="" class="carrossel" />
+        <div class="login-button">
+          <button><a href="#">Entrar</a></button>
+        </div>
+      </div>
+    </header>
+    <!------------------- Main -------------------->
+    <section class="conteudo">
+
+      <!------------------- Carrossel -------------------->
+      <div class="container-carrossel">
+
+        <button id="voltar"><img src="seta_botao.png" alt=""></button>
+
+        <div class="container">
+          <img src="goku.png" alt="" class="carrossel on" />
+          <img src="tempestade.jpeg" alt="" class="carrossel" />
+          <img src="busto_wolverine.jpeg" alt="" class="carrossel" />
+
+        </div>
+
+        <button id="avancar"><img src="seta_botao.png" alt=""></button>
 
       </div>
 
-      <button id="avancar"><img src="seta_botao.png" alt=""></button>
 
-    </div>
+      <!------------------- Subsection -------------------->
+      <section id="informacoes">
 
+        <div class="texto">
+          <h1>Quem ele é?</h1>
+          <p>ele é marida da Amanda</p>
+        </div>
+        <div class="texto">
+          <h1>Oque ele faz ?</h1>
+          <p>Coisas legais</p>
+        </div>
+        <div class="texto">
+          <h1>Porque ele faz?</h1>
+          <p>Porque sim</p>
+        </div>
 
-    <!------------------- Subsection -------------------->
-    <section id="informacoes">
-
-      <div class="texto">
-        <h1>Quem ele é?</h1>
-        <p>ele é marida da Amanda</p>
-      </div>
-      <div class="texto">
-        <h1>Oque ele faz ?</h1>
-        <p>Coisas legais</p>
-      </div>
-      <div class="texto">
-        <h1>Porque ele faz?</h1>
-        <p>Porque sim</p>
-      </div>
+      </section>
 
     </section>
 
-  </section>
-
-  <!------------------- Footer -------------------->
-  <footer class="">
-    <!------------------- Redes Sociais -------------------->
-    <div class="redesSociais">
+    <!------------------- Footer -------------------->
+    <footer class="">
+      <!------------------- Redes Sociais -------------------->
+      <div class="redesSociais">
 
 
-      <div class="instagramLogo">
+        <div class="instagramLogo">
 
-        <img src="Instagram_icon.png.webp" alt="" class="logo" />
+          <img src="Instagram_icon.png.webp" alt="" class="logo" />
+        </div>
+        <div class="instagramLink tooltip">
+          <a href="https://www.instagram.com/cp.arte_makeover/">@cp.arte_makeover</a>
+          <span class="tooltiptext">https://www.instagram.com/cp.arte_makeover/</span>
+        </div>
+        <div class="youtubeLogo">
+
+          <img src="youtube_icon.png" alt="" class="logo" />
+
+        </div>
+        <div class="youtubeLink tooltip">
+          <a href="https://www.youtube.com/@cp.arte_makeover">@cp.arte_makeover</a>
+          <span class="tooltiptext">https://www.youtube.com/@cp.arte_makeover</span>
+        </div>
       </div>
-      <div class="instagramLink">
-        <a href="https://www.instagram.com/cp.arte_makeover/">@cp.arte_makeover</a>
       </div>
-      <div class="youtubeLogo">
+      <!------------------- Contato -------------------->
+      <div class="contato">
 
-        <img src="youtube_icon.png" alt="" class="logo" />
+        <div class="formulario">
 
-      </div>
-      <div class="youtubeLink">
+          <h3>Fale conosco:</h3>
 
-        <a href="https://www.youtube.com/@cp.arte_makeover">@cp.arte_makeover</a>
-      </div>
-    </div>
-    </div>
-    <!------------------- Contato -------------------->
-    <div class="contato">
+          <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
 
-      <div class="formulario">
+          <div class="telefone">
+            <label for="telefone">Telefone</label>
+            <input type="number" name="telefone" id="telefone">
+          </div>
 
-        <h3>Fale conosco:</h3>
+          <div class="menssagem">
+            <label for="menssagem">Menssagem</label>
+            <input type="text" name="menssagem" id="menssagem">
+          </div>
 
-        <div class="email">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
         </div>
 
-        <div class="telefone">
-          <label for="telefone">Telefone</label>
-          <input type="number" name="telefone" id="telefone">
-        </div>
-
-        <div class="menssagem">
-          <label for="menssagem">Menssagem</label>
-          <input type="text" name="menssagem" id="menssagem">
-        </div>
-
       </div>
+    </footer>
 
-    </div>
-  </footer>
-
-  <!-------------------------------- JS ----------------------------------->
-  <script src="script.js"></script>
-</body>
+    <!-------------------------------- JS ----------------------------------->
+    <script src="script.js"></script>
+  </body>
 
 </html>

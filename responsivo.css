@@ -1,0 +1,84 @@
+ /* Media queries para responsividade */
+
+@media (max-width: 360px) {
+    /* Estilos para celular pequeno */
+
+    .nav-link{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+}
+@media (min-width: 361px) and (max-width: 480px) {
+    /* Estilos para celular médio */
+   
+    .nav-link{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icone{
+        display: block;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Estilos para celular grande */
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Estilos para tablet retrato */
+     
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos para tablet paisagem */
+
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Estilos para desktop comum */
+    
+}
+@media (min-width: 1441px) {
+    /* Estilos para telas grandes */
+}
