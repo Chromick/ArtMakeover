@@ -1,14 +1,12 @@
 /* mostrar e tirar menu hamburguer */
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "menu-icon.png";
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
     } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "close_white_36dp.svg";
+      x.style.display = "block";
     }
-}
+  }
 
 
 /* efeitos carousel */
