@@ -29,7 +29,7 @@ header {
 }
 
 .logo img{
-  width: 150px;
+  width: 100px;
 }
 
 .nav-list {
@@ -71,7 +71,7 @@ header {
   color: var(--text--dark);
   font-weight: 600;
   font-size: 1.1rem;
-  font-family: "Rubik", sans-serif; /**/
+  font-family: "Rubik", sans-serif; /*definindo fonte*/
 }
 
 .mobile-menu-icon {
@@ -95,7 +95,7 @@ header {
   display: flex; /**/
   align-items: center; /*alinhado no centro*/
   justify-content: center; /*centralizando na div*/
-  width: 300px; /*tamanho do quadro*/
+  width: 900px; /*tamanho do quadro*/
 }
 .carrossel{
   opacity: 0; /**/
@@ -120,7 +120,7 @@ header {
 #voltar img, #avancar img{
   width: 100%; /**/
   height: 100%; /**/
-
+  
 }
 
 #voltar {
@@ -135,11 +135,13 @@ header {
 }
 
 .texto{
-  background-color: var(--text--ligth); /* definindo cor do fundo */ 
-  color: var(--text--dark); /* definido a cor da letra */
+  font-family: "Rubik", sans-serif; /*definindo fonte*/
+  background-color: var(--text--dark); /* definindo cor do fundo */ 
+  color: var(--text--ligth); /* definido a cor da letra */
+  text-shadow: rgba(240, 46, 175, 0.4) 0px 1px, rgba(240, 46, 170, 0.3) 0px 2px, rgba(240, 227, 46, 0.2) 0px 3px, rgba(46, 179, 240, 0.1) 0px 4px, rgba(46, 240, 88, 0.05) 0px 5px ;
   margin: 10px;
-  width: 300px; /*definindo largura */
-  height: 350px; /*definindo altura*/
+  width: 100%; /*definindo largura */
+  height: 100%; /*definindo altura*/
   border-radius: 10px; /*colocando as pontas arredondadas*/
   text-align: center; /*trazendo todo o texto pro centro*/
   box-shadow: rgba(240, 46, 175, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 227, 46, 0.2) 0px 15px, rgba(46, 179, 240, 0.1) 0px 20px, rgba(46, 240, 88, 0.05) 0px 25px;
@@ -157,72 +159,75 @@ header {
 /*---------------------------- FOOTER----------------------*/
 
 footer{
-  background-color: rgb(31, 30, 30); /**/
-  color: var(--text--ligth); /**/
-  font-family: "Rubik", sans-serif; /**/
-  font-weight: 700; /**/
-  font-size: 20px; /**/
-  display: flex; /**/
-  justify-content: space-around; /**/
-  margin-top: 20px; /**/
-  height: 150px; /**/
+  background-color: rgb(31, 30, 30); /*cor do fundo do footer*/
+  color: var(--text--ligth); /*cor de todo o texto do footer*/
+  font-family: "Rubik", sans-serif; /*fonte do texto*/
+  font-weight: 700; /*espeçura da fonte*/
+  font-size: 15px; /*tamanho das fontes*/
+  display: flex; /*deixa as divs uma ao lado da outra*/
+  justify-content: space-around; /*deixa com espaço ao redor dos conteudos igual*/
+  margin-top: 20px; /**afasta o conteudo da margem de cima*/
+  height: 150px; /*aumenta o tamanho da altura do footer*/
 }
 
 /*---------------------------- Redes Sociais ----------------------*/
 
 .redesSociais{
   display: flex;
-  justify-content: center; /**/
-  align-items: center; /**/
+  justify-content: center; /*ajustando ao centro da div*/
+  align-items: center; /*alinhando no centro da div*/
 }
 
 .instagramLogo img{
-  height: 50px; /**/
+  height: 50px; /*tamanho da imagem*/
 }
 .youtubeLogo img{
-  height: 70px; /**/
+  height: 70px; /*tamanho da imagem*/
 }
 .instagramLink{
-  margin-left: 5px; /**/
+  margin-left: 5px; /*afastamento do lado esquerdo*/
 }
 .youtubeLink{
-  margin-left: 5px; /**/
+  margin-left: 5px; /*afastamento do lado esquerdo*/
 }
 
 .youtubeLink .tooltiptext{
-  text-size-adjust: auto; /**/
+  text-size-adjust: auto; /*ajuste automatico do tamanho da texto*/
+}
+
+.instagramLink a, .youtubeLink a{
+  color: var(--text--ligth);
 }
 /*---------------------------- Menssagem ----------------------*/
 
 .contato{
   display: flex; /**/
-  justify-content: center; /**/
-  align-items: center; /**/
+  justify-content: center; /*ajustando ao centro da div*/
+  align-items: center; /*alinhando ao centro da div*/
 }
 
 input {
-  border-radius: 10px; /**/
+  border-radius: 10px; /*deixando a caixa input com borda arredondadda*/
 }
 /*---------------------------- Tooltip ----------------------*/
 
 .tooltip {
   position: relative; /**/
   display: inline-block; /**/
-  border-bottom: 1px dotted black; /**/
 }
 
 .tooltip span{
-  font-size: 10px; /**/
+  font-size: 10px; /*tamanho do texto da tooltip*/
 }
 
 .tooltip .tooltiptext {
-  visibility: hidden; /**/
-  width: auto; /**/
-  padding: 1px 2px; /**/
-  background-color: var(--text--ligth); /**/
-  color:var(--text--dark); /**/
-  text-align: center; /**/
-  border-radius: 6px; /**/
+  visibility: hidden; /*esconde a caixa tooltip*/
+  width: auto; /*tamanho automatico*/
+  padding: 1px 2px; /*afastamento vertical e horizontal do texto para o fim da caixa*/
+  background-color: var(--text--ligth); /*cor do fundo da tooltip*/
+  color:var(--text--dark); /*cor do texto da tooltip*/
+  text-align: center; /*alinha texto ao centro*/
+  border-radius: 6px; /*deixa borda da tooltip arredondada*/
   
   /*--------------------------POSIÇÃO DA TOOLTIP------------------- */
   position: absolute; /**/
