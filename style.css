@@ -135,7 +135,7 @@ header {
 
 /*--------------------- CARROSSEL --------------------------*/
 .conteudo{
-  background-color: black;
+  background-color: var(--text--dark);
 }
 .container-carrossel{
   display: flex; /*deixando uma do lado da outra*/
