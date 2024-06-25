@@ -134,6 +134,9 @@ header {
 
 
 /*--------------------- CARROSSEL --------------------------*/
+.conteudo{
+  background-color: black;
+}
 .container-carrossel{
   display: flex; /*deixando uma do lado da outra*/
   min-height: 100vh; /*vizualizar as imagens todas*/
